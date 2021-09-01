@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky position</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: #212F3D;
+            color:#ffff;
+            padding:20px;
+            font-size: 25px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        nav{
+            background-color: #566573 ;
+            color:#ffff;
+            padding:20px;
+            font-size: 25px;
+            text-align: center;
+            text-transform: capitalize;
+            margin: 5px 0 0; 
+            position: sticky;
+            top:0;
+        }
+        main{
+            height:800px;
+            background-color: #707B7C;
+            margin: 5px 0 0;
+        }
+        footer{
+            background-color: #212F3D;
+            color:#ffff;
+            padding:15px;
+            font-size: 20px;
+            text-align: center;
+            text-transform: capitalize;
+            margin:5px 0 0;
+        }
+        .btn{
+            background-color: aqua;
+            border:none;
+            font-size: 20px;
+            padding: 20px;
+            position: fixed;
+            bottom:5px;
+            right:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        this is a header
+    </header>
+    <nav>
+        this is a sticky nav
+    </nav>
+    <main></main>
+    <footer>
+        this is a footer
+    </footer>
+    <button class="btn">Go to facebook</button>
+</body>
+</html>

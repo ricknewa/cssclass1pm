@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image zoom</title>
+    <style>
+        .container{
+            height:400px;
+            width:700px;
+            margin:auto;
+            border:5px solid rgb(150,200,200);
+            overflow: hidden;
+        }
+        img{
+            height:100%;
+            width:100%;
+            transition: all 3s;
+        }
+        .container:hover img{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <img src="https://images.indianexpress.com/2021/02/Green-solution.jpg" alt="image source not valid" title="nature image">
+    </div>
+    
+</body>
+</html>
