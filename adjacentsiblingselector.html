@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adjacent sibling selector (+)</title>
+    <style>
+        .container + p{
+            color:red;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>first paragraph</p>
+        <p>second paragraph</p>
+        <span><p>this paragraph tag is inside span tag</p></span>
+    </div>
+    <p>this is outside container</p>
+    <p>this is not adjacent to container div</p>
+</body>
+</html>

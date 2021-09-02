@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute position with ancestor/parent position define</title>
+    <style>
+        .container{
+            height: 400px;
+            width:700px; 
+            margin:auto;
+            position: relative;
+        }
+        img{
+            height:100%;
+            width:100%;
+        }
+        .left{
+            border:none;
+            background-color: royalblue;
+            color:white;
+            font-size: 25px;
+            padding: 5px;
+            position: absolute;
+            top:40%;
+            left:0;
+        }
+        .right{
+            border:none;
+            background-color: royalblue;
+            color:white;
+            font-size: 25px;
+            padding: 5px;
+            position: absolute;
+            top:40%;
+            right:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://thumbs-prod.si-cdn.com/P4Smi9MthEBXH7pdW8Y-bvwR6ts=/1072x720/filters:no_upscale()/https://public-media.si-cdn.com/filer/04/8e/048ed839-a581-48af-a0ae-fac6fec00948/gettyimages-168346757_web.jpg" alt="">
+        <button class="left">&lt;</button>
+        <button class="right">&gt;</button>
+    </div>
+    
+</body>
+</html>
